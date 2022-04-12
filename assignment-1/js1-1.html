@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			JavaScript : Pass a function as parameter
+		</title>
+	</head>
+	
+	<body style = "text-align:center;">
+		
+		<h1 style = "color:orangered;" >
+			Zemoso
+		</h1>
+		
+		<p>
+			<h3>Passing function as Parameter.</h3>
+		</p>
+		
+		<!-- Function call after clicking the button -->
+		<button onclick = "outer_function('Afreen',inner_function)">
+			Show Employee
+		</button>	
+		
+		<script>
+			function inner_function(name){
+				return 'Welcome to Zemoso labs  '+name+'!';
+			}
+			function outer_function(Name,inner){
+				alert(inner(Name));
+			}
+		</script>
+	</body>
+</html>					
